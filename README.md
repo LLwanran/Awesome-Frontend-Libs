@@ -1,206 +1,139 @@
 # Awesome-Frontend-Libs
 🎉 整理平时常用的前端库~~~
 
+## 构建工具
+
+*   [bower](https://github.com/bower/bower) - 软件包管理器
+*   [yarn](https://yarnpkg.com/lang/zh-hans) - 依赖管理
+*   [npm](https://www.npmjs.cn) - 依赖管理
+*   [nrm](https://github.com/Pana/nrm) - npm镜像管理
+*   [nvm](https://github.com/Pana/nrm) - node 版本管理
+*   [browser-sync](http://browsersync.cn/) - 省时的浏览器同步测试工具
+
 ## 打包工具
 
-*   [webpack](https://github.com/webpack/webpack)\- 打包项目。
-*   [rollup](https://github.com/rollup/rollup)\- 打包 npm 库。
-*   [parcel](https://github.com/parcel-bundler/parcel)\- webpack 竞品，但发展前景不乐观，再观察一段时间。
-*   [systemjs](https://github.com/systemjs/systemjs)\- 针对一些特殊场景会比较有用，比如云 ide，支付宝小程序 IDE 等。
-*   [microbundle](https://github.com/developit/microbundle)\- 基于 rollup，简化配置。
-*   [webpack-dev-server](https://github.com/webpack/webpack-dev-server)\- webpack 开发服务器。
-*   [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware)\- webpack 中间件。
-*   [vue-cli](https://github.com/vuejs/vue-cli)\- vue 命令行工具。
-*   [create-react-app](https://github.com/facebook/create-react-app)\- react 官方脚手架。
-*   [webpack-merge](https://github.com/survivejs/webpack-merge)\- 合并 webpack 配置。
-*   [webpack-chain](https://github.com/neutrinojs/webpack-chain)\- 通过 chain 风格 api 的方式修改 webpack 配置。
+*   [webpack](https://webpack.docschina.org) - 现代 JavaScript 应用程序的静态模块打包器
+*   [rollup](https://www.rollupjs.com/guide/zh) - 更加适合用于构建 Library
+*   [parcel](https://zh.parceljs.org) - 极速零配置Web应用打包工具
+*   [systemjs](https://github.com/systemjs/systemjs) - 通用模块加载器，支持AMD、CommonJS、ES6等各种格式的JS模块加载，也是Angular2官推的加载器
+*   [microbundle](https://github.com/developit/microbundle) - 由Rollup提供支持的小型模块零配置打包程序
 
-### [](https://github.com/sorrycc/awesome-f2e-libs#webpack-loader-%E5%92%8C%E6%8F%92%E4%BB%B6)webpack loader 和插件
+### webpack插件
 
-*   [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin)\- 性能提升 70%，但有坑。
-*   [svgr](https://github.com/smooth-code/svgr)\- svg 转 react 组件。
-*   [postcss](https://github.com/postcss/postcss)\- CSS 界的 babel。
-*   [autoprefixer](https://github.com/postcss/autoprefixer)\- 为 CSS 选择权自动加 prefix。
-*   [cssnano](https://github.com/cssnano/cssnano)\- CSS 压缩，也有类 preset 的概念。
-*   [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)\- 提取 CSS 为单独文件。
-*   [webpackbar](https://github.com/nuxt/webpackbar)\- webpack 进度条。
-*   [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)\- 构建产物占比分析。
-*   [uglifyjs-webpack-plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin)\- JS 压缩，产物为 ES5 语法。
-*   [terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin)\- JS 压缩，产物为 ES6 语法。
-*   [webpack-manifest-plugin](https://github.com/danethurber/webpack-manifest-plugin)\- 生成 manifest.json。
-*   [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)\- 复制额外的文件到输出目录。
-*   [case-sensitive-paths-webpack-plugin](https://github.com/Urthen/case-sensitive-paths-webpack-plugin)\- 大小写敏感检测，能规避一些问题，但构建时性能消耗较大。
-*   [css-hot-loader](https://github.com/shepherdwind/css-hot-loader)\- CSS 热更新，搭配 mini-css-extract-plugin 使用。
-*   [duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin)\- 重复依赖检测。
-*   [fork-ts-checker-webpack-plugin](https://github.com/Realytics/fork-ts-checker-webpack-plugin)\- ts 语法检测。
+*   [add-asset-html-webpack-plugin](https://github.com/SimenB/add-asset-html-webpack-plugin) - 将打包后的文件，加入html中
+*   [clean-webpack-plugin](https://github.com/johnagan/clean-webpack-plugin) - 目录清空
+*   [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin) - gzip 压缩
+*   [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin) - 对资源文件进行拷贝粘贴
+*   [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) - 分离项目中的css文件
+*   [friendly-errors-webpack-plugin](https://github.com/geowarin/friendly-errors-webpack-plugin) - 错误友好提示
+*   [webpack-merge](https://github.com/survivejs/webpack-merge) - 合并 webpack 配置
+*   [webpack-chain](https://github.com/neutrinojs/webpack-chain) - 通过 chain 风格 api 的方式修改 webpack 配置
+*   [webpack-dev-server](https://github.com/webpack/webpack-dev-server) - webpack 开发服务器
+*   [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) - webpack 中间件
+*   [hard-source-webpack-plugin](https://github.com/mzgoddard/hard-source-webpack-plugin) - 开启 webpack 缓存，二次启动时间减少 80% -
+*   [svgr](https://github.com/smooth-code/svgr) - 将SVG转换为React组件🦁
+*   [postcss](https://github.com/postcss/postcss) - 提供了一种方式用 JavaScript 代码来处理 CSS
+*   [autoprefixer](https://github.com/postcss/autoprefixer) - 处理CSS前缀问题
+*   [cssnano](https://github.com/cssnano/cssnano) - 压缩和优化你的css
+*   [webpackbar](https://github.com/nuxt/webpackbar) - 终端输出进度条
+*   [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) - webpack打包性能分析
+*   [terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin) - JS压缩(ES6)
+*   [uglifyjs-webpack-plugin](https://github.com/webpack-contrib/uglifyjs-webpack-plugin) - JS压缩(ES5)
+*   [webpack-manifest-plugin](https://github.com/danethurber/webpack-manifest-plugin) - Webpack 的静态资源持久缓存
+*   [case-sensitive-paths-webpack-plugin](https://github.com/Urthen/case-sensitive-paths-webpack-plugin) - 路径大小写敏感问题
+*   [css-hot-loader](https://github.com/shepherdwind/css-hot-loader) - 模块热替换
+*   [duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin) - 对项目中的重复包进行检测，以便于对项目进行引用优化
+*   [fork-ts-checker-webpack-plugin](https://github.com/Realytics/fork-ts-checker-webpack-plugin) - 类型检查
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E5%8C%85%E7%AE%A1%E7%90%86)包管理
+## babel
 
-*   [yarn](https://github.com/yarnpkg/yarn)\- 我用这个。
-*   [npm](https://github.com/npm/cli)
+*   [babel](https://www.babeljs.cn) - 用于编写下一代JavaScript 的编译器
+*   [babel-plugin-rawest](https://github.com/sokra/rawact) - React 的 DOM 直出方案
+*   [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros) - 使环境变量的设置更加简单
+*   [babel-plugin-dynamic-import-node](https://github.com/airbnb/babel-plugin-dynamic-import-node) - 有些场景下会需要禁用`import()`语法
+*   [babel-plugin-react-require](https://github.com/vslinko/babel-plugin-react-require) - 自动为 jsx 语法加 react 引用
+*   [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types) - 删除 prop-types，生产环境用
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#babel)babel
+## 测试
 
-*   [babel](https://github.com/babel/babel)
-*   [babel-plugin-rawest](https://github.com/sokra/rawact)\- React 的 DOM 直出方案。
-*   [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros)\- 前端文件写 node 逻辑。
-*   [babel-plugin-dynamic-import-node](https://github.com/airbnb/babel-plugin-dynamic-import-node)\- 有些场景下会需要禁用`import()`语法。
-*   [babel-plugin-react-require](https://github.com/vslinko/babel-plugin-react-require)\- 自动为 jsx 语法加 react 引用。
-*   [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types)\- 删除 prop-types，生产环境用。
+*   [Mocha](https://github.com/mochajs/mocha) - 能够运行在Node和浏览器中的多功能的JavaScript测试框架，它让异步测试简单且有趣
+*   [jest](https://github.com/facebook/jest) - facebook出品的JavaScript单元测试软件
+*   [ts-jest](https://github.com/kulshekhar/ts-jest) - 对原生TypeScript 项目进行UI测试
+*   [enzyme](https://github.com/airbnb/enzyme) - Airbnb开源的 React 测试类库
+*   [jsdom](https://github.com/jsdom/jsdom) - 纯粹由javascript 实现的一系列web标准，用于在nodejs 中使用
+*   [puppeteer](https://github.com/GoogleChrome/puppeteer) - Google Chrome 团队官方的无界面Chrome 工具
+*   [react-test-renderer](https://github.com/facebook/react/tree/master/packages/react-test-renderer) - 测试渲染
+*   [react-testing-library](https://github.com/kentcdodds/react-testing-library) - 测试实用程序
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E6%B5%8B%E8%AF%95)测试
+## 框架
 
-*   [jest](https://github.com/facebook/jest)
-*   [ts-jest](https://github.com/kulshekhar/ts-jest)
-*   [enzyme](https://github.com/airbnb/enzyme)
-*   [jsdom](https://github.com/jsdom/jsdom)
-*   [puppeteer](https://github.com/GoogleChrome/puppeteer)
-*   [react-test-rerender](https://github.com/facebook/react/tree/master/packages/react-test-renderer)\- 官方出品。
-*   [react-testing-library](https://github.com/kentcdodds/react-testing-library)\- kentcdodds 出品。
+*   [vue](https://cn.vuejs.org) - 渐进式 JavaScript 框架
+*   [nuxt.js](https://zh.nuxtjs.org) - 基于Vue.js 的轻量级应用框架，可用来创建服务端渲染(SSR) 应用，也可充当静态站点引擎生成静态站点应用
+*   [react](https://react.docschina.org) - 用于构建用户界面的 JavaScript 库
+*   [next.js](https://github.com/zeit/next.js) - 构建React服务端渲染应用
+*   [gastby](https://github.com/gatsbyjs/gatsby) - 静态站点生成器
+*   [umi](https://umijs.org/zh) - 🌋 可插拔的企业级 react 应用框架
+*   [taro](https://nervjs.github.io/taro) - 多端统一开发框架，支持用React 的开发方式编写一次代码，生成能运行在微信小程序、H5、React Native 等的应用
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E6%A1%86%E6%9E%B6)框架
+## vue 相关库
 
-*   [react](https://github.com/facebook/react)
-*   [vue](https://github.com/vuejs/vue)
-*   [next.js](https://github.com/zeit/next.js)
-*   [nuxt.js](https://github.com/nuxt/nuxt.js)
-*   [gastby](https://github.com/gatsbyjs/gatsby)
-*   [umi](https://github.com/umijs/umi)\- 蚂蚁金服的前端框架，我目前在维护。
-*   [choo](https://github.com/choojs/choo)\- dva 最初的 API 是参考这个实现的，已经不怎么发展了，再关注一段时间。
-*   [taro](https://github.com/NervJS/taro)\- 用 React 写小程序，适配微信和支付宝等。
-*   [after.js](https://github.com/jaredpalmer/after.js)
+*   [Vue CLI](https://cli.vuejs.org/zh) - Vue.js 开发的标准工具
+*   [Vue Loader](https://vue-loader.vuejs.org/zh/) - 是一个 webpack 的 loader，它允许你以一种名为单文件组件 (SFCs)的格式撰写 Vue 组件
+*   [Vue Router](https://router.vuejs.org/zh) - 官方的路由管理器
+*   [Vuex](https://vuex.vuejs.org/zh) - 状态管理
+*   [vue-devtools](https://github.com/vuejs/vue-devtools) - Vue调试神器
+*   [element-ui](http://element-cn.eleme.io/#/zh-CN) - 基于Vue 2.0 的组件库
+*   [iview](https://www.iviewui.com) - UI组件库
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#react-%E7%9B%B8%E5%85%B3%E5%BA%93)react 相关库
+## react 相关库
 
-*   [preact](https://github.com/developit/preact)\- 轻量级 React 实现。
-*   [inferno](https://github.com/infernojs/inferno)\- 轻量级 React 实现。
-*   [react-router](https://github.com/ReactTraining/react-router)\- React 路由方案。
-*   [reach-router](https://github.com/reach/router)\- React 路由方案，较新，优势是可访问性。
-*   [router5](https://github.com/router5/router5)\- 通用的路由方案。
-*   [react-loadable](https://github.com/jamiebuilds/react-loadable)\- 按需加载 react 组件。
-*   [ant-design](https://github.com/ant-design/ant-design)\- 蚂蚁金服的 React UI 库。
-*   [material-ui](https://github.com/mui-org/material-ui)\- UI 库。
-*   [react-intl](https://github.com/yahoo/react-intl)\- React 的国际化方案。
-*   [react-dnd](https://github.com/react-dnd/react-dnd)\- 拖拽实现。
-*   [react-helmet](https://github.com/nfl/react-helmet)\- 修改 html 的 header 内容。
+*   [create-react-app](https://github.com/facebook/create-react-app) - 业界最优秀的 React 应用开发工具之一
+*   [react-router](http://react-guide.github.io/react-router-cn/) - React 路由解决方案
+*   [Ant Design](https://ant.design/index-cn) - 蚂蚁金服的 React UI 库
+*   [material-ui](https://www.mdui.org/design/) - UI 库
+*   [react-intl](https://github.com/yahoo/react-intl) - React 国际化多语言
+*   [react-dnd](https://github.com/react-dnd/react-dnd) - 拖拽实现
+*   [react-helmet](https://github.com/nfl/react-helmet) - 修改 html 的 header 内容
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#vue-%E7%9B%B8%E5%85%B3%E5%BA%93)vue 相关库
+## 工具类
 
-*   [vue-router](https://github.com/vuejs/vue-router)
+*   [lodash](https://www.lodashjs.com) - 实用工具库
+*   [moment](http://momentjs.cn) - 日期处理类库
+*   [dayjs](https://github.com/iamkun/dayjs) - Moment.js轻量化方案，拥有同样强大的API
+*   [fastclick](https://github.com/ftlabs/fastclick) - 解决移动端click事件300ms延迟
+*   [lib-flexible](https://github.com/amfe/lib-flexible) - 可伸缩布局方案
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E5%B7%A5%E5%85%B7%E7%B1%BB)工具类
+## 命令行
 
-*   [history](https://github.com/ReactTraining/history)
-*   [path-to-regexp](https://github.com/pillarjs/path-to-regexp)
-*   [lodash](https://github.com/lodash/lodash)
-*   [fastclick](https://github.com/ftlabs/fastclick)
+*   [shelljs](https://github.com/shelljs/shelljs) - 重新包装了 child_process，调用系统命令更加方便
+*   [yargs](https://github.com/yargs/yargs) - 命令行解析器
+*   [chalk](https://github.com/chalk/chalk) - 终端字符串美化
+*   [cheerio](https://github.com/cheeriojs/cheerio) - 用类似jQuery语法操作Dom结构
+*   [chokidar](https://github.com/paulmillr/chokidar) - 监听文件夹改变
+*   [clipboardy](https://github.com/sindresorhus/clipboardy) - 复制到Node.js中的剪贴板
+*   [debug](https://github.com/visionmedia/debug) - 打印调试
+*   [deprecate](https://github.com/brianc/node-deprecate) - 给过期警告
+*   [glob](https://github.com/isaacs/node-glob) - 路径模式匹配
+*   [tiny-glob](https://github.com/terkelg/tiny-glob) - 一个超级微小和更快〜350％ 的node-glob替代品
+*   [signale](https://github.com/klaussinani/signale) - 漂亮的日志打印
+*   [semver](https://github.com/npm/node-semver) - 处理版本相关的工作
+*   [update-notifier](https://github.com/yeoman/update-notifier) - 更新提醒
+*   [rimraf](https://github.com/isaacs/rimraf) - 删除文件和文件夹
+*   [depd](https://github.com/dougwilson/nodejs-depd) - 标记出模块已经废弃的方法或者属性，方便模块更新并且不影响用户使用
+*   [execa](https://github.com/sindresorhus/execa) - 可以调用shell和本地外部程序的javascript封装
+*   [ora](https://github.com/sindresorhus/ora) - 要用来实现 node.js 命令行环境的loading效果，和显示各种状态的图标等
+*   [inquirer](https://github.com/SBoudrias/Inquirer.js) - 试图为NodeJs做一个可嵌入式的美观的命令行界面
 
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E6%95%B0%E6%8D%AE%E6%B5%81)数据流
+## 请求处理
 
-*   [redux](https://github.com/reduxjs/redux)
-*   [immer](https://github.com/mweststrate/immer)
-*   [mobx](https://github.com/mobxjs/mobx)
-*   [unstated](https://github.com/jamiebuilds/unstated)
-*   [rxjs](https://github.com/ReactiveX/rxjs)
-*   [dva](https://github.com/dvajs/dva)\- 我写的数据流，基于 redux。
-*   [rematch](https://github.com/rematch/rematch)\- 基于 redux。
-*   [vuex](https://github.com/vuejs/vuex)
-*   [ngrx](https://github.com/ngrx/platform)
+*   [whatwg-fetch](https://github.com/whatwg/fetch) - XMLHttpRequest的最新替代技术
+*   [got](https://github.com/sindresorhus/got) - 简化了的HTTP请求，比内置的http模块有更好的接口
+*   [axios](https://github.com/axios/axios) - 一个基于promise 的HTTP 库，可以用在浏览器和node.js 中
+*   [request](https://github.com/request/request) - nodejs request模块
+*   [reqwest](https://github.com/ded/reqwest) - 浏览器异步HTTP请求
 
-### [](https://github.com/sorrycc/awesome-f2e-libs#redux-%E6%89%A9%E5%B1%95)redux 扩展
+## 语言
 
-*   [react-redux](https://github.com/reduxjs/react-redux)\- 绑定 react 和 redux。
-*   [redux-saga](https://github.com/redux-saga/redux-saga)
-*   [redux-persist](https://github.com/rt2zz/redux-persist)
-*   [redux-bundler](https://github.com/henrikjoreteg/redux-bundler)
-*   [redux-box](https://github.com/anish000kumar/redux-box)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96)性能优化
-
-*   [workbox](https://github.com/GoogleChrome/workbox)\- PWA 方案，Google 出品。
-*   [critical](https://github.com/addyosmani/critical)\- 提取关键 CSS。
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E8%AF%AD%E8%A8%80)语言
-
-*   [typescript](https://github.com/Microsoft/TypeScript)
-*   [flow](https://github.com/facebook/flow)
-*   [graphql](https://github.com/graphql/graphql-js)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E6%96%87%E6%A1%A3)文档
-
-*   [vuepress](https://github.com/vuejs/vuepress)
-*   [docz](https://github.com/pedronauck/docz)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E5%B7%A5%E7%A8%8B)工程
-
-*   [lerna](https://github.com/lerna/lerna)\- monorepo 管理。
-*   [lerna-changelog](https://github.com/lerna/lerna-changelog)\- 为 lerna 项目自动生成 changelog。
-*   [eslint](https://github.com/eslint/eslint)\- JS 风格约束。
-*   [eslint-config-airbnb](https://github.com/airbnb/javascript)
-*   [xo](https://github.com/xojs/xo)\- 封装自 eslint。
-*   [prettier](https://github.com/prettier/prettier)\- 更主观的风格自动修改。
-*   [yeoman-generator](https://github.com/yeoman/generator)\- 脚手架工具。
-*   [serve](https://github.com/zeit/serve)\- 本地静态服务器。
-*   [np](https://github.com/sindresorhus/np)\- npm publish 辅助，自动 push、打 tag、升版本等。
-*   [lint-staged](https://github.com/okonet/lint-staged)\- eslint 提速，只 lint 提交的代码。
-*   [coveralls](https://github.com/marketplace/coveralls)\- 覆盖率。
-*   [husky](https://github.com/typicode/husky)\- 添加 git hooks。
-*   [cross-env](https://github.com/kentcdodds/cross-env)\- 跨平台的环境变量声明。
-*   [projj](https://github.com/popomore/projj)\- 本地 git 项目管理，支持 github 和 gitlab。
-*   [nvm](https://github.com/creationix/nvm)\- 管理 node 版本。
-*   [concurrently](https://github.com/kimmobrunfeldt/concurrently)\- 在 npm scripts 里并行执行命令。
-*   [@zeit/ncc](https://github.com/zeit/ncc)\- 打包为 npm 包为一个文件。
-*   [npm-check](https://github.com/dylang/npm-check)\- 检测依赖升级情况，我会和`yarn upgrade-interactive`配合着用，主要用来检测冗余依赖。
-*   [cpx](https://github.com/mysticatea/cpx)\- 复制，支持 glob，并且可以 watch。
-*   [onchange](https://github.com/Qard/onchange)\- 监听文件变动然后做一些事。
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E7%BC%96%E8%BE%91%E5%99%A8)编辑器
-
-*   [VSCode](https://code.visualstudio.com/)
-*   [IntelliJ IDEA](https://www.jetbrains.com/idea/)\- 我用这个。
-*   [codesandbox](https://codesandbox.io/)
-*   [stackblitz](https://stackblitz.com/)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#css)css
-
-*   [css modules](https://github.com/css-modules/css-modules)
-*   [emotion](https://github.com/emotion-js/emotion)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E5%91%BD%E4%BB%A4%E8%A1%8C)命令行
-
-*   [yargs](https://github.com/yargs/yargs)\- 命令行入口套件。
-*   [yargs-parser](https://github.com/yargs/yargs-parser)\- 命令行参数解析。
-*   [chalk](https://github.com/chalk/chalk)\- 输出不同颜色。
-*   [cheerio](https://github.com/cheeriojs/cheerio)\- 用类 jQuery 语法处理 HTML。
-*   [chokidar](https://github.com/paulmillr/chokidar)\- 文件监听。
-*   [clipboardy](https://github.com/sindresorhus/clipboardy)\- 复制文本到粘贴板。
-*   [debug](https://github.com/visionmedia/debug)\- 打印调试信息。
-*   [deprecate](https://github.com/brianc/node-deprecate)\- 给过期警告。
-*   [glob](https://github.com/isaacs/node-glob)\- 文件查找。
-*   [tiny-glob](https://github.com/terkelg/tiny-glob)\- 文件查找。
-*   [signale](https://github.com/klaussinani/signale)\- 漂亮的日志打印。
-*   [semver](https://github.com/npm/node-semver)\- semver 版本处理。
-*   [update-notifier](https://github.com/yeoman/update-notifier)\- 更新提醒。
-*   [rimraf](https://github.com/isaacs/rimraf)\- 删除文件。
-*   [depd](https://github.com/dougwilson/nodejs-depd)\- 给出 deprecated 警告。
-*   [execa](https://github.com/sindresorhus/execa)\- 比 child\_process 好用，返回 Promise。
-*   [ora](https://github.com/sindresorhus/ora)\- 控制命令行光标，显示 loading 等。
-*   [inquirer](https://github.com/SBoudrias/Inquirer.js)\- 交互式命令接口，比如 prompt。
-*   [enquirer](https://github.com/enquirer/enquirer)\- 同上，更 cool 一些。
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86)请求处理
-
-*   [whatwg-fetch](https://github.com/github/fetch)
-*   [got](https://github.com/sindresorhus/got)
-*   [axios](https://github.com/axios/axios)
-*   [request](https://github.com/request/request)
-*   [reqwest](https://github.com/ded/reqwest)
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E8%AF%AD%E6%B3%95%E8%A7%A3%E6%9E%90)语法解析
-
-*   [esquery](https://github.com/estools/esquery)\- 语法树查询。
-
-## [](https://github.com/sorrycc/awesome-f2e-libs#%E5%85%B6%E4%BB%96)其他
-
-*   [electron](https://github.com/electron/electron)
-*   [fx](https://github.com/antonmedv/fx)\- 交互式 JSON 查看。
+*   [TypeScript](https://www.tslang.cn/docs/home.html) - 静态类型检查，微软开发
+*   [FLOW](https://flow.org) - facebook 出品的JavaScript 静态类型检查工具，Vue.js 源码使用
+*   [GraphQL](https://graphql.cn) - 一种用于 API 的查询语言
