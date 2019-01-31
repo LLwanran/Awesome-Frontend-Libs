@@ -53,12 +53,17 @@
 *   [babel-eslint](https://github.com/babel/babel-eslint) - 围绕Babel解析器的包装器，使其与ESLint兼容
 *   [babel-helper-vue-jsx-merge-props](https://github.com/vuejs/babel-helper-vue-jsx-merge-props) - 让Vue支持JSX语法
 *   [babel-loader](https://github.com/babel/babel-loader) - 用来处理ES6语法，将其编译为浏览器可以执行的js语法
+*   [babel-plugin-syntax-dynamic-import](https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import) - 动态import
+*   [babel-plugin-transform-class-properties](https://babel.bootcss.com/docs/plugins/transform-class-properties) - class 属性转换
+*   [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy) - 支持装饰器语法
+*   [babel-plugin-transform-object-rest-spread](https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread) - 支持Object的spread操作符
 *   [babel-plugin-transform-runtime](https://www.babeljs.cn/docs/plugins/transform-runtime) - 避免了重复打包代码和手动引入模块的痛苦
 *   [babel-plugin-rawest](https://github.com/sokra/rawact) - React 的 DOM 直出方案
 *   [babel-plugin-macros](https://github.com/kentcdodds/babel-plugin-macros) - 使环境变量的设置更加简单
 *   [babel-plugin-dynamic-import-node](https://github.com/airbnb/babel-plugin-dynamic-import-node) - 有些场景下会需要禁用`import()`语法
 *   [babel-plugin-react-require](https://github.com/vslinko/babel-plugin-react-require) - 自动为 jsx 语法加 react 引用
 *   [babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types) - 删除 prop-types，生产环境用
+*   [babel-polyfill](https://babeljs.io/docs/en/babel-polyfill) - 通过改变全局来兼容 es2015 所有方法
 *   [babel-preset-env](https://babeljs.io/docs/en/babel-preset-env) - 根据你支持的环境自动决定适合你的 Babel 插件的 Babel preset
 
 ## 测试
