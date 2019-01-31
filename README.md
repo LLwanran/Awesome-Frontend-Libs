@@ -48,6 +48,7 @@
 ## babel
 
 *   [babel](https://www.babeljs.cn) - 用于编写下一代JavaScript 的编译器
+*   [babel-cli](https://github.com/babel/babel/tree/master/packages/babel-cli) - 自带一个 babel-node 命令，提供一个支持ES6的REPL环境
 *   [babel-core](https://github.com/babel/babel/tree/master/packages/babel-core) - 把js代码分析成ast，方便各个插件分析语法进行相应的处理
 *   [babel-eslint](https://github.com/babel/babel-eslint) - 围绕Babel解析器的包装器，使其与ESLint兼容
 *   [babel-helper-vue-jsx-merge-props](https://github.com/vuejs/babel-helper-vue-jsx-merge-props) - 让Vue支持JSX语法
